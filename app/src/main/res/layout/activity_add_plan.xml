@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.senier_project.planner.Activity.AddPlanActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="취소" />
+
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="저장" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text=""
+                android:textSize="20sp"
+                android:gravity="center">
+            </TextView>
+
+
+
+        </RelativeLayout>
+
+
+        <EditText
+            android:layout_marginTop="40dp"
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_baseline_edit_24"
+            android:drawablePadding="10dp"
+            android:hint="일정 입력"
+            android:textSize="20sp" />
+
+
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/datepickerdialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_baseline_date_range_24"
+            android:drawablePadding="10dp"
+            android:focusableInTouchMode="false" />
+
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/timepickerdialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/time"
+            android:drawablePadding="10dp"
+            android:focusableInTouchMode="false"
+            android:hint="시간 설정"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/placename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/locate"
+            android:drawablePadding="10dp"
+            android:focusableInTouchMode="false"
+            android:hint="장소 설정"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

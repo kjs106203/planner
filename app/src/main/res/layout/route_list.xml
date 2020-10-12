@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="9dp"
+    android:id="@+id/cardview_route">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/list_item">
+
+        <TextView
+            android:id="@+id/duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"
+            android:text="10"
+            android:textSize="20dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/startbus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="13dp"
+            android:text=""
+            android:textSize="23dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/startbusinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="13dp"
+            android:text=""
+            android:textSize="18dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/finishbus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:layout_marginStart="47dp"
+            android:text=""
+            android:textSize="23dp">
+        </TextView>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
